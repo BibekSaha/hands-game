@@ -138,6 +138,7 @@ a {
     border-radius: 10px;
     background-color: #266352;
     color: white;
+    display: none;
 }
 
 /* Styling for mobile */
