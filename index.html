@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico">
+    <title>Hand Game | Bibek Saha</title>
+</head>
+<body>
+    
+    <h1 class="main-heading">Rock · Paper · Scissor</h1>
+    
+    <div class="score-board">
+        You <span id="score"><span id="you-score">0</span> : <span id="comp-score">0</span></span> Computer
+    </div>
+
+    <div class="container">
+        
+        <div class="hands">
+            <i class="rock fas fa-hand-rock fa-10x"></i>
+            <i class=" paper fas fa-hand-paper fa-10x"></i>
+            <i class="scissors fas fa-hand-scissors fa-10x"></i>
+        </div>
+        
+        <p class="tagline">It's your turn to make move</p>
+
+        <a href="#">Restart Game</a>
+               
+        <div class="popup-container">
+            <div class="popup">
+                <img src="" alt="">
+                <p class="computer-choice">Computer chose <i id="computer-choice-image"></i></p>
+                <p> <span id="change-text">You</span><span id="win-or-lose">WIN</span></p>
+                <i class="fas fa-times fa-lg cross-btn"></i>
+            </div>
+        </div>
+        
+
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/76b5c280b9.js"></script>
+</body>
+</html>

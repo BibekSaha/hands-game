@@ -1,0 +1,184 @@
+/* General Styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Raleway', sans-serif;
+    /*max-height: 100vh;*/
+}
+
+/* Header Styling */
+h1 {
+    width: 100%;
+    min-height: 12vh;
+    background-color: #266352;
+    color: #b5f7e6;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Score Board Styling */
+.score-board {
+    text-align: center;
+    width: 100%;
+    min-height: 20vh;
+    background-color: #53c0a2;
+    padding: 45px 0;
+    font-size: 40px;
+    color: #128061;
+}
+
+span#score {
+    font-weight: bold;
+    color: white;
+    margin: 0 20px;
+    font-size: 75px;
+    border: 3px white solid;
+    padding: 10px 15px;
+}
+
+/* Container to wrap the rest of the content */
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    min-height: 67.5vh;
+    background-color: #128061;
+}
+
+/* Icons of Hands */
+.hands {
+    text-align: center;
+}
+
+div.hands i{
+    padding: 50px;
+    cursor: pointer;
+    color: #ffcd94;
+    border: 5px white solid;
+    margin: 50px;
+    border-radius: 50%;
+    background: #266352;
+}
+
+/* Paragaraph tagline styling */
+p.tagline {
+    text-align: center;
+    margin: 15px 20px;
+    font-size: 30px;
+    color: white;
+}
+
+/* Popup styling */
+.popup-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    display: none;
+}
+
+.popup {
+    position: relative;
+    top: 27%;
+    height: 400px;
+    width: 600px;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    border: 5px solid #266352;
+    border-radius: 20px;
+    background-color: #00a79d;
+    color: white;
+}
+
+div.popup p {
+    font-size: 25px;
+    padding: 20px;
+}
+
+#computer-choice-image {
+    border: 4px white solid;
+    margin-left: 20px;
+    border-radius: 100%;
+    padding: 25px;
+    color: #ffcd94;
+    background-color: #266352;
+}
+
+#win-or-lose {
+    font-size: 50px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+div.popup .cross-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+/* Restart Game button styling */
+a {
+    display: inline-block;
+    margin: 30px;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    width: 200px;
+    font-size: 20px;
+    background-color: white;
+    border: 2px white solid;
+    border-radius: 10px;
+    background-color: #266352;
+    color: white;
+}
+
+/* Styling for mobile */
+@media (max-width: 500px) {
+    .score-board {
+        text-align: center;
+        background-color: #53c0a2;
+        padding: 60px 0;
+        font-size: 30px;
+        color: #128061;
+        margin: 0 auto;
+    }
+    
+    span#score {
+        margin: 0 10px;
+        font-size: 45px;    
+    }
+
+    div.hands i{
+        display: block;
+        padding: 30px;
+        margin: 20px;
+    }
+
+    #computer-choice-image {
+        margin-top: 10px;
+    }
+
+    .popup {
+        top: 27%;
+        height: 300px;
+        width: 300px;
+    }
+
+    div.popup p {
+        font-size: 20px;
+    }
+    
+    #win-or-lose {
+        font-size: 40px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+}
