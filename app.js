@@ -71,11 +71,6 @@ hands.addEventListener("click", e => {
     }
 });
 
-if(window.outerWidth >= 500) {
-    computerIcon.classList.remove("fa-5x");
-    computerIcon.classList.add("fa-xs");
-}
-
 crossBtn.addEventListener("click", () => {
     popup.style.display = "none";
     window.removeEventListener("scroll", scrollDisable);
